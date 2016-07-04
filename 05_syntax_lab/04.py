@@ -1,8 +1,10 @@
-"""
-Write a program that reads lines from the user
-until an empty line is inserted.
-After the user typed in an empty line,
-print all previously inserted lines in reverse
-order (from last to first)
-"""
 
+line = "dummy"
+arr = []
+index = 0
+while (line != ""):
+    line = raw_input()
+    arr.insert(index, line)
+    index+=1
+for i in range(1,index + 1):
+    print arr[index-i]
