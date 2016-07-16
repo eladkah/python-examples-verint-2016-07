@@ -1,7 +1,11 @@
-"""
-Write a function that takes two arguments: 
-    A string
-    And a number
-If wrong types were passed in, raise an exception
-"""
+'''
+my_method receives a number and string as parameters and validates them.
+'''
 
+def my_method(num, string):
+    if type(num) != int:
+        raise Exception("num parameter must be a number")
+    if type(string) != str:
+        raise Exception("string parameter must be a string")
+
+my_method(1, 'a')
